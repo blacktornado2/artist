@@ -1,7 +1,16 @@
+import { useState } from 'react';
 import { useSiteConfig } from '../context/SiteConfigContext.jsx';
+
+const LINKS = [
+  { href: '#gallery', label: 'Gallery' },
+  { href: '#about', label: 'About' },
+  { href: '#commission', label: 'Commission' },
+  { href: '#contact', label: 'Contact' },
+];
 
 export default function Nav() {
   const { config } = useSiteConfig();
+  const [open, setOpen] = useState(false);
 
   return (
     <header
@@ -57,6 +66,67 @@ export default function Nav() {
         <a href="#contact" style={{ opacity: 0.85 }}>
           Contact
         </a>
+      </nav>
+
+      <button
+        type="button"
+        className="mob-nav-toggle"
+        aria-label={open ? 'Close menu' : 'Open menu'}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        style={{
+          display: 'none',
+          background: 'none',
+          border: 'none',
+          padding: 8,
+          cursor: 'pointer',
+          flexDirection: 'column',
+          gap: 5,
+        }}
+      >
+        <span
+          style={{
+            display: 'block',
+            width: 22,
+            height: 2,
+            background: 'var(--ap-dark)',
+            transition: 'transform 0.2s ease, opacity 0.2s ease',
+            transform: open ? 'translateY(7px) rotate(45deg)' : 'none',
+          }}
+        />
+        <span
+          style={{
+            display: 'block',
+            width: 22,
+            height: 2,
+            background: 'var(--ap-dark)',
+            opacity: open ? 0 : 1,
+            transition: 'opacity 0.2s ease',
+          }}
+        />
+        <span
+          style={{
+            display: 'block',
+            width: 22,
+            height: 2,
+            background: 'var(--ap-dark)',
+            transition: 'transform 0.2s ease, opacity 0.2s ease',
+            transform: open ? 'translateY(-7px) rotate(-45deg)' : 'none',
+          }}
+        />
+      </button>
+
+      <nav
+        className="mob-nav-dropdown"
+        style={{
+          display: open ? 'flex' : 'none',
+        }}
+      >
+        {LINKS.map((link) => (
+          <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            {link.label}
+          </a>
+        ))}
       </nav>
     </header>
   );

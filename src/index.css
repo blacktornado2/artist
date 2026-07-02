@@ -122,8 +122,32 @@ button {
 /* ── Mobile Responsive ──────────────────────────────── */
 @media (max-width: 768px) {
   /* Nav */
-  .mob-nav { padding: 0 20px !important; }
-  .mob-nav-links { gap: 18px !important; font-size: 11px !important; letter-spacing: 1.5px !important; }
+  .mob-nav { padding: 0 20px !important; position: relative !important; }
+  .mob-nav-links { display: none !important; }
+  .mob-nav-toggle { display: flex !important; }
+  .mob-nav a[href="#home"] { font-size: 17px !important; letter-spacing: 1.5px !important; }
+  .mob-nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #f5f0e8;
+    border-bottom: 1px solid rgba(45, 74, 62, 0.14);
+    box-shadow: 0 12px 24px rgba(26, 46, 38, 0.1);
+    padding: 8px 20px 20px;
+  }
+  .mob-nav-dropdown a {
+    padding: 14px 4px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2d4a3e;
+    border-bottom: 1px solid rgba(45, 74, 62, 0.1);
+  }
+  .mob-nav-dropdown a:last-child {
+    border-bottom: none;
+  }
 
   /* Hero */
   .mob-hero { grid-template-columns: 1fr !important; }
