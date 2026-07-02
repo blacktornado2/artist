@@ -1,0 +1,123 @@
+{
+  "artistName": "Annie Artist",
+  "tagline": "\"Every painting begins as an act of noticing — and ends as an invitation to do the same.\"",
+  "accentColor": "#C9A84C",
+  "darkColor": "#1A2E26",
+  "heroPaintingId": "morning-mist",
+  "hero": {
+    "eyebrow": "Original Paintings · Landscapes & Still Life",
+    "headingLine1": "The Art of",
+    "headingEmphasis": "Unhurried",
+    "headingLine2": "Seeing.",
+    "body": "Original works by Anisha Goyal — painted after the workday ends, with the patience of someone who has learned to look slowly."
+  },
+  "about": {
+    "name": "Anisha Goyal",
+    "subLabel": "Painter · Business Analyst",
+    "image": null,
+    "paragraphs": [
+      "By day, I work as a business analyst — finding meaning in numbers, translating complexity into clarity. It is precise, logical, and satisfying. But it is not where I find beauty.",
+      "Painting is where I find beauty. My landscapes and still lifes begin with long, unhurried looking — at the way evening light lands on a hillside, or the quiet presence of fruit on a table. Each canvas is a record of that attention.",
+      "I work primarily in oil on canvas and linen. My subjects are landscapes and still lifes — ordinary moments made worth pausing for."
+    ]
+  },
+  "contact": {
+    "heading": "Happy to hear from you",
+    "intro": "For inquiries about available works, commissions, or anything else — write to me directly. I respond personally.",
+    "email": "hello@annieartist.com",
+    "instagram": "@annieartist",
+    "location": "India"
+  },
+  "paintings": [
+    {
+      "id": "morning-mist",
+      "title": "Morning Mist",
+      "medium": "Oil on canvas",
+      "size": "60×80 cm",
+      "year": "2024",
+      "illustration": "hills",
+      "image": null,
+      "desc": "A study in atmospheric light — misty hills receding into a cool morning sky. Painted from memory after an early walk, before the world woke up."
+    },
+    {
+      "id": "coastal-morning",
+      "title": "Coastal Morning",
+      "medium": "Oil on canvas",
+      "size": "70×90 cm",
+      "year": "2024",
+      "illustration": "coastal",
+      "image": null,
+      "desc": "The coastline at first light, dunes and tufted grasses catching the low horizontal sun. The largest work in the current collection, painted over three weeks."
+    },
+    {
+      "id": "mediterranean-still-life",
+      "title": "Mediterranean Still Life",
+      "medium": "Oil on board",
+      "size": "30×40 cm",
+      "year": "2024",
+      "illustration": "lemons",
+      "image": null,
+      "desc": "A ceramic bowl of lemons on a draped cloth. Painted slowly over several evenings, returning each time to the same arrangement and the same quiet light."
+    },
+    {
+      "id": "golden-fields",
+      "title": "Golden Fields",
+      "medium": "Oil on canvas",
+      "size": "50×70 cm",
+      "year": "2024",
+      "illustration": "golden",
+      "image": null,
+      "desc": "Late summer, the fields past their peak. A warm, unhurried palette that captures the particular quality of August — the heaviness of it, the gold."
+    },
+    {
+      "id": "summer-bouquet",
+      "title": "Summer Bouquet",
+      "medium": "Oil on canvas",
+      "size": "40×50 cm",
+      "year": "2024",
+      "illustration": "flowers",
+      "image": null,
+      "desc": "Garden flowers in a simple white vase. A direct, joyful painting — made quickly and kept exactly as it came, without correction."
+    },
+    {
+      "id": "into-the-forest",
+      "title": "Into the Forest",
+      "medium": "Oil on linen",
+      "size": "50×70 cm",
+      "year": "2023",
+      "illustration": "forest",
+      "image": null,
+      "desc": "The interior of a mixed woodland at dusk. Dappled light falling through the canopy onto a path that leads somewhere you cannot quite see."
+    },
+    {
+      "id": "autumn-harvest",
+      "title": "Autumn Harvest",
+      "medium": "Oil on linen",
+      "size": "40×55 cm",
+      "year": "2023",
+      "illustration": "golden",
+      "image": null,
+      "desc": "A field study from early autumn — warm ochres and ambers, the stubble of a recently harvested crop, the long shadows of late afternoon."
+    },
+    {
+      "id": "the-lemon-bowl",
+      "title": "The Lemon Bowl",
+      "medium": "Oil on board",
+      "size": "25×35 cm",
+      "year": "2024",
+      "illustration": "lemons",
+      "image": null,
+      "desc": "A small, intimate still life. Three lemons in a terracotta bowl, painted in a single sitting on a rainy Sunday. One of my favourites."
+    },
+    {
+      "id": "woodland-path",
+      "title": "Woodland Path",
+      "medium": "Oil on canvas",
+      "size": "50×60 cm",
+      "year": "2023",
+      "illustration": "forest",
+      "image": null,
+      "desc": "An evening walk into the trees. The path disappearing into green shadow, the last light of the day filtering through from somewhere behind you."
+    }
+  ]
+}
