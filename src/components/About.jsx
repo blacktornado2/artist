@@ -8,6 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
+      className="mob-about"
       style={{
         background: 'var(--ap-dark)',
         padding: '96px 64px',
@@ -51,7 +52,7 @@ export default function About() {
         <p
           style={{
             margin: '0 0 18px',
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: 4,
             textTransform: 'uppercase',
             color: 'var(--ap-accent)',
@@ -75,7 +76,7 @@ export default function About() {
         <p
           style={{
             margin: '0 0 28px',
-            fontSize: 12,
+            fontSize: 13,
             letterSpacing: 3,
             textTransform: 'uppercase',
             color: 'rgba(201,168,76,0.65)',

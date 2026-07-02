@@ -5,11 +5,14 @@ export default function Nav() {
 
   return (
     <header
+      className="mob-nav"
       style={{
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        background: '#F5F0E8',
+        background: 'rgba(245,240,232,0.72)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
         borderBottom: '1px solid rgba(45,74,62,0.14)',
         height: 72,
         display: 'flex',
@@ -32,10 +35,11 @@ export default function Nav() {
         {config.artistName}
       </a>
       <nav
+        className="mob-nav-links"
         style={{
           display: 'flex',
           gap: 40,
-          fontSize: 11,
+          fontSize: 12,
           letterSpacing: 2.5,
           textTransform: 'uppercase',
           color: '#2D4A3E',

@@ -7,7 +7,7 @@ export default function Gallery() {
   const [first, second, ...rest] = paintings;
 
   return (
-    <section id="gallery" style={{ padding: '80px 64px 88px', background: '#F5F0E8' }}>
+    <section id="gallery" className="mob-section" style={{ padding: '80px 64px 88px', background: '#F5F0E8' }}>
       <div
         style={{
           display: 'flex',
@@ -22,7 +22,7 @@ export default function Gallery() {
           <p
             style={{
               margin: '0 0 8px',
-              fontSize: 10,
+              fontSize: 11,
               letterSpacing: 4,
               textTransform: 'uppercase',
               color: '#8FA67A',
@@ -56,6 +56,7 @@ export default function Gallery() {
 
       {first && (
         <div
+          className="mob-gallery-featured"
           style={{
             display: 'grid',
             gridTemplateColumns: second ? '2fr 1fr' : '1fr',

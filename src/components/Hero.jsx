@@ -9,6 +9,7 @@ export default function Hero() {
   return (
     <section
       id="home"
+      className="mob-hero"
       style={{
         background: 'var(--ap-dark)',
         minHeight: 640,
@@ -19,6 +20,7 @@ export default function Hero() {
       }}
     >
       <div
+        className="mob-hero-content"
         style={{
           padding: '90px 56px 90px 64px',
           display: 'flex',
@@ -32,7 +34,7 @@ export default function Hero() {
           className="fade-up-0"
           style={{
             margin: '0 0 22px',
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: 4,
             textTransform: 'uppercase',
             color: 'var(--ap-accent)',
@@ -41,7 +43,7 @@ export default function Hero() {
           {hero.eyebrow}
         </p>
         <h1
-          className="fade-up-1"
+          className="fade-up-1 mob-hero-h1"
           style={{
             margin: '0 0 28px',
             fontFamily: "'Cormorant Garamond', serif",
@@ -80,7 +82,7 @@ export default function Hero() {
               padding: '15px 34px',
               background: 'var(--ap-accent)',
               color: 'var(--ap-dark)',
-              fontSize: 11,
+              fontSize: 12,
               letterSpacing: 2.5,
               textTransform: 'uppercase',
               fontWeight: 500,
@@ -91,7 +93,7 @@ export default function Hero() {
           <a
             href="#commission"
             style={{
-              fontSize: 11,
+              fontSize: 12,
               letterSpacing: 2,
               textTransform: 'uppercase',
               color: 'rgba(245,240,232,0.52)',
@@ -105,7 +107,7 @@ export default function Hero() {
       </div>
 
       {heroPainting && (
-        <div style={{ position: 'relative', overflow: 'hidden', background: '#0C1C12' }}>
+        <div className="mob-hero-image" style={{ position: 'relative', overflow: 'hidden', background: '#0C1C12' }}>
           <a href={`#/${heroPainting.id}`} style={{ position: 'absolute', inset: 0, display: 'block' }}>
             <PaintingImage painting={heroPainting} />
           </a>

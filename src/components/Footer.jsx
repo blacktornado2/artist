@@ -5,6 +5,7 @@ export default function Footer({ minimal = false }) {
 
   return (
     <footer
+      className="mob-footer"
       style={{
         background: '#0C1C12',
         padding: '28px 64px',

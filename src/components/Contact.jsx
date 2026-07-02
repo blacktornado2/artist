@@ -23,13 +23,13 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" style={{ background: 'var(--ap-dark)', padding: '80px 64px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+    <section id="contact" className="mob-section" style={{ background: 'var(--ap-dark)', padding: '80px 64px' }}>
+      <div className="mob-two-col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
         <div>
           <p
             style={{
               margin: '0 0 16px',
-              fontSize: 10,
+              fontSize: 11,
               letterSpacing: 4,
               textTransform: 'uppercase',
               color: 'var(--ap-accent)',
@@ -64,7 +64,7 @@ export default function Contact() {
                 <p
                   style={{
                     margin: '0 0 4px',
-                    fontSize: 10,
+                    fontSize: 11,
                     letterSpacing: 3,
                     textTransform: 'uppercase',
                     color: 'rgba(201,168,76,0.65)',

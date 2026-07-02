@@ -30,6 +30,7 @@ export default function PaintingDetail({ paintingId }) {
 
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '64px 64px 80px' }}>
         <div
+          className="mob-detail-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 360px',
@@ -47,7 +48,7 @@ export default function PaintingDetail({ paintingId }) {
             <p
               style={{
                 margin: '0 0 18px',
-                fontSize: 10,
+                fontSize: 11,
                 letterSpacing: 4,
                 textTransform: 'uppercase',
                 color: '#8FA67A',
@@ -71,7 +72,7 @@ export default function PaintingDetail({ paintingId }) {
             <p
               style={{
                 margin: '0 0 36px',
-                fontSize: 13,
+                fontSize: 14,
                 letterSpacing: 0.8,
                 color: '#8FA67A',
                 paddingBottom: 36,
@@ -99,7 +100,7 @@ export default function PaintingDetail({ paintingId }) {
                 padding: '16px 32px',
                 background: 'var(--ap-dark)',
                 color: '#F5F0E8',
-                fontSize: 11,
+                fontSize: 12,
                 letterSpacing: 2.5,
                 textTransform: 'uppercase',
                 textAlign: 'center',
@@ -109,19 +110,19 @@ export default function PaintingDetail({ paintingId }) {
             >
               Inquire About This Work
             </a>
-            <p style={{ fontSize: 12, color: '#8FA67A', textAlign: 'center', lineHeight: 1.6 }}>
+            <p style={{ fontSize: 13, color: '#8FA67A', textAlign: 'center', lineHeight: 1.6 }}>
               Available by private enquiry · I respond personally
             </p>
           </div>
         </div>
       </div>
 
-      <div style={{ borderTop: '1px solid rgba(45,74,62,0.13)', padding: '56px 64px 80px' }}>
+      <div className="mob-detail-related" style={{ borderTop: '1px solid rgba(45,74,62,0.13)', padding: '56px 64px 80px' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <p
             style={{
               margin: '0 0 40px',
-              fontSize: 10,
+              fontSize: 11,
               letterSpacing: 4,
               textTransform: 'uppercase',
               color: '#8FA67A',
@@ -157,7 +158,7 @@ export default function PaintingDetail({ paintingId }) {
                   >
                     {p.title}
                   </p>
-                  <p style={{ margin: 0, fontSize: 12, color: '#8FA67A' }}>
+                  <p style={{ margin: 0, fontSize: 13, color: '#8FA67A' }}>
                     {p.medium} · {p.size}
                   </p>
                 </div>

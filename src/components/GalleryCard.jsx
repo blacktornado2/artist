@@ -39,7 +39,7 @@ export function FeaturedCard({ painting, large = false }) {
           >
             {painting.title}
           </p>
-          <p style={{ margin: 0, fontSize: 12, color: '#8FA67A' }}>
+          <p style={{ margin: 0, fontSize: 13, color: '#8FA67A' }}>
             {painting.medium} · {painting.size}
             {large ? ` · ${painting.year}` : ''}
           </p>
@@ -47,7 +47,7 @@ export function FeaturedCard({ painting, large = false }) {
         <a
           href="#contact"
           style={{
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: large ? 2.5 : 2,
             textTransform: 'uppercase',
             color: '#2D4A3E',
@@ -90,13 +90,13 @@ export function StandardCard({ painting }) {
         >
           {painting.title}
         </p>
-        <p style={{ margin: '0 0 10px', fontSize: 12, color: '#8FA67A' }}>
+        <p style={{ margin: '0 0 10px', fontSize: 13, color: '#8FA67A' }}>
           {painting.medium} · {painting.size}
         </p>
         <a
           href="#contact"
           style={{
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: 2,
             textTransform: 'uppercase',
             color: '#2D4A3E',

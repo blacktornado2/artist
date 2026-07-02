@@ -119,6 +119,43 @@ button {
   opacity: 0.82;
 }
 
+/* ── Mobile Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav */
+  .mob-nav { padding: 0 20px !important; }
+  .mob-nav-links { gap: 18px !important; font-size: 11px !important; letter-spacing: 1.5px !important; }
+
+  /* Hero */
+  .mob-hero { grid-template-columns: 1fr !important; }
+  .mob-hero-content { padding: 52px 24px 40px !important; }
+  .mob-hero-image { min-height: 260px !important; position: relative !important; }
+  .mob-hero-h1 { font-size: 48px !important; }
+
+  /* Generic: section padding & 2-col → 1-col */
+  .mob-section { padding: 60px 24px !important; }
+  .mob-two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
+
+  /* About */
+  .mob-about { grid-template-columns: 1fr !important; padding: 60px 24px !important; gap: 40px !important; }
+
+  /* Gallery */
+  .mob-gallery-featured { grid-template-columns: 1fr !important; }
+
+  /* Commission inline form row */
+  .mob-form-row { grid-template-columns: 1fr !important; }
+
+  /* Quote divider */
+  .mob-quote-text { font-size: 26px !important; }
+
+  /* Footer */
+  .mob-footer { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; padding: 32px 20px !important; }
+
+  /* Painting detail */
+  .mob-detail { padding: 40px 20px 60px !important; }
+  .mob-detail-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .mob-detail-related { padding: 40px 20px 60px !important; }
+}
+
 .hover-fade-5:hover {
   opacity: 0.5;
 }

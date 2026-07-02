@@ -5,6 +5,7 @@ export default function QuoteDivider() {
 
   return (
     <section
+      className="mob-section"
       style={{
         background: '#F5F0E8',
         padding: '80px 64px',
@@ -14,6 +15,7 @@ export default function QuoteDivider() {
       }}
     >
       <p
+        className="mob-quote-text"
         style={{
           fontFamily: "'Cormorant Garamond', serif",
           fontSize: 36,
@@ -27,7 +29,7 @@ export default function QuoteDivider() {
       >
         {config.tagline}
       </p>
-      <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#8FA67A' }}>
+      <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#8FA67A' }}>
         — {config.about.name}
       </p>
     </section>

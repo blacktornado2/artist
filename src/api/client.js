@@ -20,8 +20,8 @@ async function request(path, options = {}) {
 }
 
 export async function getConfig() {
-  // No backend configured in production → serve the bundled static snapshot
-  if (import.meta.env.PROD && !import.meta.env.VITE_API_URL) {
+  // Use static snapshot when no backend URL is configured (dev or prod)
+  if (!import.meta.env.VITE_API_URL) {
     const res = await fetch('/data/config.json');
     if (!res.ok) throw new Error('Failed to load site config');
     return res.json();

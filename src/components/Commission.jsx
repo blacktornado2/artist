@@ -38,8 +38,8 @@ export default function Commission() {
   }
 
   return (
-    <section id="commission" style={{ background: '#F5F0E8', padding: '88px 64px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 96, alignItems: 'start' }}>
+    <section id="commission" className="mob-section" style={{ background: '#F5F0E8', padding: '88px 64px' }}>
+      <div className="mob-two-col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 96, alignItems: 'start' }}>
         <div>
           <p
             style={{
@@ -101,10 +101,10 @@ export default function Commission() {
                   </span>
                 </div>
                 <div>
-                  <p style={{ margin: '0 0 4px', fontSize: 13, fontWeight: 500, color: 'var(--ap-dark)', letterSpacing: 0.3 }}>
+                  <p style={{ margin: '0 0 4px', fontSize: 14, fontWeight: 500, color: 'var(--ap-dark)', letterSpacing: 0.3 }}>
                     {step.title}
                   </p>
-                  <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: '#8A7A64', fontWeight: 300 }}>
+                  <p style={{ margin: 0, fontSize: 15, lineHeight: 1.7, color: '#8A7A64', fontWeight: 300 }}>
                     {step.body}
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function Commission() {
             Tell me about your vision
           </p>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+            <div className="mob-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
               <input placeholder="Your name" style={inputStyle} required />
               <input type="email" placeholder="Your email" style={inputStyle} required />
             </div>
