@@ -31,6 +31,11 @@ body {
   color: rgba(45, 74, 62, 0.38);
 }
 
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: rgba(245, 240, 232, 0.38);
+}
+
 input:focus,
 textarea:focus,
 select:focus {
