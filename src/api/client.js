@@ -1,5 +1,11 @@
+// In development the Vite proxy forwards /api → localhost:4000.
+// In production set VITE_API_URL to your backend origin (e.g. https://api.example.com).
+// When VITE_API_URL is not set in production the app falls back to the static
+// public/data/config.json bundle so the site renders without a live backend.
+const API_BASE = import.meta.env.VITE_API_URL ?? '';
+
 async function request(path, options = {}) {
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${API_BASE}/api${path}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
@@ -13,7 +19,13 @@ async function request(path, options = {}) {
   return res.json();
 }
 
-export function getConfig() {
+export async function getConfig() {
+  // No backend configured in production → serve the bundled static snapshot
+  if (import.meta.env.PROD && !import.meta.env.VITE_API_URL) {
+    const res = await fetch('/data/config.json');
+    if (!res.ok) throw new Error('Failed to load site config');
+    return res.json();
+  }
   return request('/config');
 }
 
@@ -42,7 +54,7 @@ export function logout(token) {
 export async function uploadImage(file, token) {
   const formData = new FormData();
   formData.append('image', file);
-  const res = await fetch('/api/upload', {
+  const res = await fetch(`${API_BASE}/api/upload`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}` },
     body: formData,
